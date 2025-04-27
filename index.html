@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groove Deep - Official EPK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-blue: #2A3B47;
+            --accent-blue: #3A6B8E;
+            --highlight: #E8C547;
+            --light-bg: #F5F5F5;
+            --text-dark: #333;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: var(--light-bg);
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(rgba(42, 59, 71, 0.8), rgba(42, 59, 71, 0.8)),
+                        url('https://source.unsplash.com/random/1920x1080/?amapiano') center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--primary-blue);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--highlight);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+        }
+
+        /* Bio Section */
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .bio-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .genre-list {
+            list-style: none;
+            margin: 1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .genre-list li {
+            background: var(--accent-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Performances Section */
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .performance-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Quote Section */
+        .quote {
+            text-align: center;
+            font-style: italic;
+            padding: 2rem;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 10px;
+            margin: 3rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#performances">Performances</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header" id="home">
+        <h1>Groove Deep</h1>
+        <p class="tagline">Amapiano | Afro-House | Deep Grooves</p>
+        <div class="social-links">
+            <a href="https://instagram.com/groovedeep29" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@groovedeepsa" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/HlomphoXï" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </header>
+
+    <section class="section" id="bio">
+        <h2>Artist Bio</h2>
+        <div class="bio-grid">
+            <img src="assets/IMG-20250427-WA0017.jpg" alt="Groove Deep" class="bio-image">
+            <div class="bio-content">
+                <p>Groove Deep is a talented music producer and DJ from South Africa, specializing in multiple genres. With a passion for creating infectious beats and captivating audiences, Groove Deep has quickly become a rising star in the music scene.</p>
+                
+                <h3>Music Style</h3>
+                <ul class="genre-list">
+                    <li>Amapiano</li>
+                    <li>Deep House</li>
+                    <li>Afro-House</li>
+                    <li>3 Step</li>
+                </ul>
+                
+                <div class="quote">
+                    "Groove Deep's music is a perfect blend of Amapiano, Deep House, Afro House/Tech and 3 Step guaranteed to get you moving on the dance floor."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="performances">
+        <h2>Recent Performances</h2>
+        <div class="performance-grid">
+            <div class="performance-card">
+                <h3>15 March 2024</h3>
+                <p>CPUT Stadium</p>
+                <p>Bellville</p>
+            </div>
+            <div class="performance-card">
+                <h3>6 March 2024</h3>
+                <p>Living Room Bxxxxment</p>
+                <p>Bellville</p>
+            </div>
+            <div class="performance-card">
+                <h3>3 April 2024</h3>
+                <p>Living Room Bxxxxment</p>
+                <p>Bellville</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact & Booking</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:groovedeepsa@gmail.com">groovedeepsa@gmail.com</a></p>
+            <p>Phone: <a href="tel:+27640206441">+27 64 020 6441</a></p>
+        </div>
+        
+        <h3>Booking Information</h3>
+        <div class="contact-info">
+            <p>For booking inquiries, please contact:</p>
+            <p>Email: [Insert Booking Agent Email]</p>
+            <p>Phone: [Insert Booking Agent Phone Number]</p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.nav').style.backgroundColor = 'rgba(42, 59, 71, 0.95)';
+            } else {
+                document.querySelector('.nav').style.backgroundColor = 'var(--primary-blue)';
+            }
+        });
+    </script>
+</body>
+</html>
