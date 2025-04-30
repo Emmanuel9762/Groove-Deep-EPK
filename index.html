@@ -136,6 +136,34 @@
         .social-links a:hover { color: var(--accent-blue); }
         .quote { text-align: center; font-style: italic; padding: 2rem; background: var(--primary-blue); color: white; border-radius: 10px; margin: 3rem 0; }
         @media (max-width: 768px) { .bio-grid { grid-template-columns: 1fr; } .header h1 { font-size: 2.5rem; } }
+
+        /* ======== Note-Card Styles ======== */
+        /* position context */
+        #contact {
+            position: relative;
+        }
+        /* the little sticky note */
+        .note-card {
+            position: absolute;
+            top: 1.5rem;
+            right: -1rem;
+            background: white;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            color: var(--text-dark);
+            z-index: 10;
+        }
+        /* bell icon color */
+        .note-card .bell-icon {
+            flex-shrink: 0;
+            color: var(--highlight);
+        }
     </style>
 </head>
 <body>
@@ -189,6 +217,13 @@
         </div>
     </section>
     <section class="section" id="contact">
+        <!-- Note card -->
+        <div class="note-card">
+            <svg class="bell-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path fill="currentColor" d="M12 2a6 6 0 0 0-6 6v4c0 .627-.115 1.237-.337 1.808L4 16h16l-1.663-2.192A4.992 4.992 0 0 1 18 12V8a6 6 0 0 0-6-6zm0 20a2.5 2.5 0 0 0 2.45-2H9.55A2.5 2.5 0 0 0 12 22z"/>
+            </svg>
+            <span>Official Press-kit images available upon request</span>
+        </div>
         <h2>Contact & Booking</h2>
         <div class="contact-info"><p>Email: <a href="mailto:groovedeepsa@gmail.com">groovedeepsa@gmail.com</a></p><p>Phone: <a href="tel:+27640206441">+27 64 020 6441</a></p></div>
         <h3>Booking Information</h3>
@@ -228,5 +263,6 @@
     </script>
 </body>
 </html>
+
 
 
